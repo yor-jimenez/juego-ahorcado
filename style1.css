@@ -31,33 +31,6 @@ body{
     color: #0A3871;
 }
 
-.letras{
-    width: 91px;
-height: 18px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 150%;
-/* identical to box height, or 18px */
-
-
-/* Gray/gray-400 */
-
-color: #495057;
-
-opacity: 0.8;
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-display: flex;
-flex-direction: column;
-}
-
 .botones{
     display: flex;
 flex-direction: row;
@@ -109,7 +82,7 @@ top: 701px;
     
     /* Dark blue/dark-blue-300 */
     
-    background: yellow;
+    background: #0A3871;
     border-radius: 24px;
     
     /* Inside auto layout */
