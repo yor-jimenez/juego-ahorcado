@@ -1,0 +1,96 @@
+body{
+    transform: scale(0.75,0.60);
+}
+
+#caja{
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;
+    margin-top: -150px;
+    padding: 0px;
+}
+
+#input-text{
+    position: absolute;
+    width: 299px;
+    height: 48px;
+    left: 376px;
+    top: 256px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px; 
+    line-height: 150%;
+    /* identical to box height, or 48px
+
+
+    /* Dark blue/dark-blue-300 */
+
+    color: #0A3871;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 688px;
+    height: 67px;
+    left: 376px;
+    top: 701px;
+
+}
+
+.guardarEmpezar{
+    /* display: flex; */
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    font-size: 25px;
+    
+    width: 332px;
+    height: 67px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: #0A3871;
+    border-radius: 24px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1;   
+
+}
+
+.cancelar{
+    /* display: flex; */
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    font-size: 25px;
+    
+    width: 332px;
+    height: 67px;
+    
+    /* Dark blue/dark-blue-300 */
+    
+    background: #0A3871;
+    border-radius: 24px;
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 1; 
+
+    
+}

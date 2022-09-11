@@ -8,24 +8,19 @@
     <link rel="stylesheet" href="reset.css">
     <title>juego_ahorcado</title>
 </head>
+
 <body>
     <div id="caja">
         <div class="imagen">
             <img class="logoAlura" src="imagenes/LogoAlura.png" alt="Logo Alura iniciando con la letra A">
         </div>
-        <input id="input-text" placeholder="Ingrese una palabra"></textarea>
-
         <div class="botones">
-            <!-- <p class="sugerencia">Max 8 letras</p>  -->
-            <button class="guardarEmpezar" onclick="botonGuardar()"> Guardar y empezar
-            </button>
-            <button class="cancelar" onclick="botonCancelar()"> Cancelar
-            </button>
+            <input class="botonIniciar" type="submit" value="Iniciar juego" id="iniciar-juego">
+            <input class="agregarPalabra" type="submit" value="Agregar nueva palabra">
+            <button class="botonIniciar" onclick="window.location.href='index2.html'">Iniciar juego</button>
         </div>
-
-    </div>
+     </div>
         
     <script src="script.js"></script>
-    
 </body>
 </html>
