@@ -1,5 +1,5 @@
 let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML"]
-let tablero = document.getElementById().getContext("2D");
+let tablero = document.getElementById("2D");
 let palabraSecreta = "";
 
 function escogerPalabraSecreta (){
@@ -12,6 +12,7 @@ function escogerPalabraSecreta (){
 
 
 function inciarJuego(){
-    document.getElementById ("iniciar-juego").style.display ="none";
+    document.getElementById ("inciarJuego").style.display ="none";
+    escogerPalabraSecreta();
 
 }
