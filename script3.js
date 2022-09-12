@@ -1,5 +1,7 @@
 let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML"]
 // let tablero = document.getElementById("2D");
+
+
 var palabraSecreta = "";
 
 let pantalla = document.querySelector("canvas");
@@ -11,12 +13,11 @@ const valores = window.location.search;
 //Creamos la instancia
 const urlParams = new URLSearchParams(valores);
 //Accedemos a los valores
-var palabraRecibida = urlParams.get('palabra');
+var palabraRecibida = atob(urlParams.get('palabra'));
 
 function escogerPalabraSecreta (){
     let palabra = palabras[Math.floor(Math.random()*palabras.length)];
     palabraSecreta = palabra;
-    console.log(palabraSecreta);
 
 }
 
@@ -35,7 +36,8 @@ function borrarCanvas(){
 
 function botonGuardar(){
     let palabra = document.getElementById("input-text").value;
-    window.location.href="index3.html?palabra="+palabra;
+    var encrypted = btoa(palabra);
+    window.location.href="index3.html?palabra="+encrypted;
 }
 
 function inciarJuego(){
@@ -46,7 +48,9 @@ function inciarJuego(){
     if (palabraRecibida){
         palabraSecreta = palabraRecibida
     }
-    
+
+    console.log(palabraSecreta);
+
     let largo = palabraSecreta.length;
     let delta = 0;
     let espaciado = (largo-1)* 5;
