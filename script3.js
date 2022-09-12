@@ -11,7 +11,7 @@ const valores = window.location.search;
 //Creamos la instancia
 const urlParams = new URLSearchParams(valores);
 //Accedemos a los valores
-var palabra = urlParams.get('palabra');
+var palabraRecibida = urlParams.get('palabra');
 
 function escogerPalabraSecreta (){
     let palabra = palabras[Math.floor(Math.random()*palabras.length)];
@@ -40,7 +40,13 @@ function botonGuardar(){
 
 function inciarJuego(){
     document.getElementById ("inciarJuego").style.display ="none";
+    
     escogerPalabraSecreta();
+
+    if (palabraRecibida){
+        palabraSecreta = palabraRecibida
+    }
+    
     let largo = palabraSecreta.length;
     let delta = 0;
     let espaciado = (largo-1)* 5;
