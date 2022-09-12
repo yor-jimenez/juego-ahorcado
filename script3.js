@@ -7,6 +7,11 @@ let pantalla = document.querySelector("canvas");
 let pincel = pantalla.getContext("2d");
 let espacio = 5;
 
+const valores = window.location.search;
+//Creamos la instancia
+const urlParams = new URLSearchParams(valores);
+//Accedemos a los valores
+var palabra = urlParams.get('palabra');
 
 function escogerPalabraSecreta (){
     let palabra = palabras[Math.floor(Math.random()*palabras.length)];
@@ -26,6 +31,11 @@ function guion (inicio,fin){
 
 function borrarCanvas(){
     pincel.clearRect(0, 0, pantalla.width, pantalla.height);
+}
+
+function botonGuardar(){
+    let palabra = document.getElementById("input-text").value;
+    window.location.href="index3.html?palabra="+palabra;
 }
 
 function inciarJuego(){
