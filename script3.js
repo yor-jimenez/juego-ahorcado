@@ -19,8 +19,8 @@ function guion (inicio,fin){
     pincel.beginPath();
     pincel.lineWidth = 3;
     pincel.strokeStyle = "blue";
-    pincel.moveTo(inicio,300);
-    pincel.lineTo(fin,300);
+    pincel.moveTo(inicio,500);
+    pincel.lineTo(fin,500);
     pincel.stroke();
 }
 
@@ -32,10 +32,12 @@ function inciarJuego(){
     document.getElementById ("inciarJuego").style.display ="none";
     escogerPalabraSecreta();
     let largo = palabraSecreta.length;
-    var inicio = 200;
     let delta = 0;
     let espaciado = (largo-1)* 5;
     let ancho = (200 - espacio)/largo;
+    // inicio = (1000 - ancho)
+    let word = largo*ancho+(largo-1)*espaciado
+    var inicio = (1000-word)/2;
     
     
     borrarCanvas();
