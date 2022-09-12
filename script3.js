@@ -68,3 +68,140 @@ function inciarJuego(){
      }
 
 }
+
+// Disenando el muneco
+
+function dibujar1 (){
+    pincel.beginPath();
+    pincel.lineWidth = 3;
+    pincel.strokeStyle = "blue";
+    pincel.moveTo(353,400);
+    pincel.lineTo(647,400);
+    pincel.stroke();    
+
+}
+
+function dibujar2 (){
+    pincel.beginPath();
+    pincel.lineWidth = 3;
+    pincel.strokeStyle = "blue";
+    pincel.moveTo(400,400);
+    pincel.lineTo(400,40);
+    pincel.stroke();    
+
+}
+
+function dibujar3 (){
+    pincel.beginPath();
+    pincel.lineWidth = 3;
+    pincel.strokeStyle = "blue";
+    pincel.moveTo(400,40);
+    pincel.lineTo(577,40);
+    pincel.stroke();    
+
+}
+
+
+function dibujar4 (){
+    pincel.beginPath();
+    pincel.lineWidth = 3;
+    pincel.strokeStyle = "blue";
+    pincel.moveTo(577,40);
+    pincel.lineTo(577,90);
+    pincel.stroke();    
+
+}
+
+function dibujar5 (){
+        // pincel.stroke(); 
+    pincel.beginPath();  
+    pincel.arc(577,122, 32, 0,  Math.PI * 2);
+// Hacemos que se dibuje
+    pincel.stroke();
+
+}
+
+function dibujar6 (){
+    pincel.beginPath();
+    pincel.lineWidth = 3;
+    pincel.strokeStyle = "blue";
+    pincel.moveTo(577,152);
+    pincel.lineTo(577,300);
+    pincel.stroke();    
+
+}
+
+
+function dibujar7 (){
+    pincel.beginPath();
+    pincel.lineWidth = 3;
+    pincel.strokeStyle = "blue";
+    pincel.moveTo(577,300);
+    pincel.lineTo(550,350);
+    pincel.stroke();    
+
+}
+
+function dibujar8 (){
+    pincel.beginPath();
+    pincel.lineWidth = 3;
+    pincel.strokeStyle = "blue";
+    pincel.moveTo(577,300);
+    pincel.lineTo(604,350);
+    pincel.stroke();    
+
+}
+
+function dibujar9 (){
+    pincel.beginPath();
+    pincel.lineWidth = 3;
+    pincel.strokeStyle = "blue";
+    pincel.moveTo(577,200);
+    pincel.lineTo(530,300);
+    pincel.stroke();    
+
+}
+
+function dibujar10 (){
+    pincel.beginPath();
+    pincel.lineWidth = 3;
+    pincel.strokeStyle = "blue";
+    pincel.moveTo(577,200);
+    pincel.lineTo(624,300);
+    pincel.stroke();    
+
+}
+
+function dibujahasta(n){
+    if(n>=1){
+        dibujar1()
+    }
+    if(n>=2){
+        dibujar2()
+    }
+    if(n>=3){
+        dibujar3()
+    }
+    if(n>=4){
+        dibujar4()
+    }
+    if(n>=5){
+        dibujar5()
+    }
+    if(n>=6){
+        dibujar6()
+    }
+    
+    if(n>=7){
+        dibujar7()
+    }
+    if(n>=8){
+        dibujar8()
+    }
+    if(n>=9){
+        dibujar9()
+    }
+    if(n>=10){
+        dibujar10()
+    }
+}
