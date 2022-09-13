@@ -20,6 +20,7 @@ var palabraRecibida = null; //atob(urlParams.get('palabra'));
 var posicionLetras = [];
 var arreglo = [];
 var poserror = 360;
+var letrasErradas = []
 
 function leercaracter(event){
     var caracter = event.key.toUpperCase();
@@ -31,10 +32,14 @@ function leercaracter(event){
     }
     if (!arreglo.includes(caracter)){
         //Se equivoco de letra..
-        pincel.font='20px normal'
-        pincel.fillText(caracter,poserror,530);
-        pincel.fillStyle = "#EE4B2B";
-        poserror = poserror + 15;
+        
+        if(!letrasErradas.includes(caracter)){
+            letrasErradas[letrasErradas.length]=caracter;
+            pincel.font='20px normal'
+            pincel.fillStyle = "#EE4B2B";
+            pincel.fillText(caracter,poserror,530);
+            poserror = poserror + 15;
+        }
 
         if(parteMuneco==1){
             dibujar1();
@@ -88,11 +93,14 @@ function leercaracter(event){
         }
     }else{
         //Si esta la letra en el arreglo..
-        posicion = arreglo.indexOf(caracter);
-        arreglo[posicion] =  null;
-        pincel.font='30px serif';
-        pincel.fillStyle = "#0000FF";
-        pincel.fillText(caracter,posicionLetras[posicion],480);
+        
+        do {
+            posicion = arreglo.indexOf(caracter);
+            arreglo[posicion] =  null;
+            pincel.font='30px serif';
+            pincel.fillStyle = "#0000FF";
+            pincel.fillText(caracter,posicionLetras[posicion],480);
+          } while (posicion > -1);
 
     }
 }
