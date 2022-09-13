@@ -83,6 +83,8 @@ function leercaracter(event){
         //Si esta la letra en el arreglo..
         posicion = arreglo.indexOf(caracter);
         arreglo[posicion] =  null;
+        pincel.fillText(caracter,posicionLetras[posicion],480)
+
     }
 }
 
@@ -138,6 +140,7 @@ function inciarJuego(){
     let word = largo*ancho+(largo-1)*espaciado
     var inicio = (1000-word)/2;
     
+    pincel.font='30px serif'
     
     borrarCanvas();
 
