@@ -1,7 +1,9 @@
 let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML"]
 // let tablero = document.getElementById("2D");
 
-
+window.onload = function(){
+    document.onkeyup = leercaracter;
+}
 var palabraSecreta = "";
 
 let pantalla = document.querySelector("canvas");
@@ -14,6 +16,10 @@ const valores = window.location.search;
 const urlParams = new URLSearchParams(valores);
 //Accedemos a los valores
 var palabraRecibida = null; //atob(urlParams.get('palabra'));
+
+function leercaracter(event){
+    console.log(event.key);
+}
 
 function escogerPalabraSecreta (){
     let palabra = palabras[Math.floor(Math.random()*palabras.length)];
@@ -44,7 +50,6 @@ function inciarJuego(){
     document.getElementById ("inciarJuego").style.display ="none";
     
     escogerPalabraSecreta();
-    console.log(palabraSecreta);
 
     palabraRecibida = atob(urlParams.get('palabra'))
 
