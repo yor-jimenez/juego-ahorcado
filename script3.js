@@ -19,6 +19,7 @@ const urlParams = new URLSearchParams(valores);
 var palabraRecibida = null; //atob(urlParams.get('palabra'));
 var posicionLetras = [];
 var arreglo = [];
+var poserror = 360;
 
 function leercaracter(event){
     var caracter = event.key.toUpperCase();
@@ -29,6 +30,12 @@ function leercaracter(event){
         return;
     }
     if (!arreglo.includes(caracter)){
+        //Se equivoco de letra..
+        pincel.font='20px normal'
+        pincel.fillText(caracter,poserror,530);
+        pincel.fillStyle = "#EE4B2B";
+        poserror = poserror + 15;
+
         if(parteMuneco==1){
             dibujar1();
             parteMuneco = parteMuneco + 1;
@@ -83,7 +90,9 @@ function leercaracter(event){
         //Si esta la letra en el arreglo..
         posicion = arreglo.indexOf(caracter);
         arreglo[posicion] =  null;
-        pincel.fillText(caracter,posicionLetras[posicion],480)
+        pincel.font='30px serif';
+        pincel.fillStyle = "#0000FF";
+        pincel.fillText(caracter,posicionLetras[posicion],480);
 
     }
 }
@@ -140,7 +149,6 @@ function inciarJuego(){
     let word = largo*ancho+(largo-1)*espaciado
     var inicio = (1000-word)/2;
     
-    pincel.font='30px serif'
     
     borrarCanvas();
 
