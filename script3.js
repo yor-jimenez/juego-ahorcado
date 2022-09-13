@@ -13,7 +13,7 @@ const valores = window.location.search;
 //Creamos la instancia
 const urlParams = new URLSearchParams(valores);
 //Accedemos a los valores
-var palabraRecibida = atob(urlParams.get('palabra'));
+var palabraRecibida = null; //atob(urlParams.get('palabra'));
 
 function escogerPalabraSecreta (){
     let palabra = palabras[Math.floor(Math.random()*palabras.length)];
@@ -44,8 +44,11 @@ function inciarJuego(){
     document.getElementById ("inciarJuego").style.display ="none";
     
     escogerPalabraSecreta();
+    console.log(palabraSecreta);
 
-    if (palabraRecibida){
+    palabraRecibida = atob(urlParams.get('palabra'))
+
+    if (urlParams.has('palabra')){
         palabraSecreta = palabraRecibida
     }
 
