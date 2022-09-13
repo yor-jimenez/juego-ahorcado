@@ -10,15 +10,80 @@ let pantalla = document.querySelector("canvas");
 
 let pincel = pantalla.getContext("2d");
 let espacio = 5;
+var parteMuneco = 1;
 
 const valores = window.location.search;
 //Creamos la instancia
 const urlParams = new URLSearchParams(valores);
 //Accedemos a los valores
 var palabraRecibida = null; //atob(urlParams.get('palabra'));
+var posicionLetras = [];
+var arreglo = [];
 
 function leercaracter(event){
-    console.log(event.key);
+    var caracter = event.key.toUpperCase();
+    var posicion;
+
+    console.log(caracter);
+    if(palabraSecreta==""){
+        return;
+    }
+    if (!arreglo.includes(caracter)){
+        if(parteMuneco==1){
+            dibujar1();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+        if(parteMuneco==2){
+            dibujar2();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+        if(parteMuneco==3){
+            dibujar3();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+        if(parteMuneco==4){
+            dibujar4();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+        if(parteMuneco==5){
+            dibujar5();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+        if(parteMuneco==6){
+            dibujar6();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+        if(parteMuneco==7){
+            dibujar7();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+        if(parteMuneco==8){
+            dibujar8();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+        if(parteMuneco==9){
+            dibujar9();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+        if(parteMuneco==10){
+            dibujar10();
+            parteMuneco = parteMuneco + 1;
+            return;
+        }
+    }else{
+        //Si esta la letra en el arreglo..
+        posicion = arreglo.indexOf(caracter);
+        arreglo[posicion] =  null;
+    }
 }
 
 function escogerPalabraSecreta (){
@@ -56,6 +121,12 @@ function inciarJuego(){
     if (urlParams.has('palabra')){
         palabraSecreta = palabraRecibida
     }
+    //convertir la palabra a mayuscula
+    palabraSecreta = palabraSecreta.toUpperCase();
+
+    //agregar la palabra en el arreglo..
+
+    arreglo = palabraSecreta.split('');
 
     console.log(palabraSecreta);
 
@@ -71,6 +142,7 @@ function inciarJuego(){
     borrarCanvas();
 
     for (var i = 0; i < largo; i++) {
+        posicionLetras[i] = inicio;
         guion(inicio,inicio+ancho);
         inicio = inicio + ancho + espaciado;
      }
@@ -79,7 +151,7 @@ function inciarJuego(){
 
 // Disenando el muneco
 
-function dibujar1 (){
+function dibujar1(){
     pincel.beginPath();
     pincel.lineWidth = 3;
     pincel.strokeStyle = "blue";
