@@ -7,7 +7,6 @@ window.onload = function(){
 var palabraSecreta = "";
 
 let pantalla = document.querySelector("canvas");
-
 let pincel = pantalla.getContext("2d");
 let espacio = 5;
 var parteMuneco = 1;
@@ -30,6 +29,7 @@ function leercaracter(event){
     if(palabraSecreta==""){
         return;
     }
+
     if (!arreglo.includes(caracter)){
         //Se equivoco de letra..
         
@@ -101,6 +101,14 @@ function leercaracter(event){
             pincel.fillStyle = "#0000FF";
             pincel.fillText(caracter,posicionLetras[posicion],480);
           } while (posicion > -1);
+
+          if(arreglo.toString().length==3){
+            //lo logrates..
+            pincel.font='50px serif';
+            pincel.fillStyle = "#0000FF";
+            pincel.fillText("LO LOGRASTES!!!",300,200)
+            return;
+        }
 
     }
 }
@@ -304,3 +312,4 @@ function dibujahasta(n){
         dibujar10()
     }
 }
+
