@@ -1,4 +1,4 @@
-let palabras = ["ALURA", "ORACLE", "ONE", "JAVASCRIPT", "HTML"]
+let palabras = ['Estudiar','Espectador','Suave','Culpa','Cena','Caballo','Combate','Maestro',' Extenso','Rueda','Vacante',' Erecta',' Fundador',' Escribir','Angel','Collar','Vapor','Dormir','Capital','Corona','Libertad','Robusto','Guantes','Equivocado','Comer','Soñar','Volar','Bromista','Corral','Amarillo','Barco','Elefante','Oso','Granulado','Postre','Sopa','Caminar','Miercoles','Diciembre','Cantar']
 // let tablero = document.getElementById("2D");
 
 window.onload = function(){
