@@ -1,7 +1,8 @@
-let palabras = ['Estudiar','Espectador','Suave','Culpa','Cena','Caballo','Combate','Maestro',' Extenso','Rueda','Vacante',' Erecta',' Fundador',' Escribir','Angel','Collar','Vapor','Dormir','Capital','Corona','Libertad','Robusto','Guantes','Equivocado','Comer','Soñar','Volar','Bromista','Corral','Amarillo','Barco','Elefante','Oso','Granulado','Postre','Sopa','Caminar','Miercoles','Diciembre','Cantar']
+let palabras = ['Estudiar','Espectador','Suave','Culpa','Cena','Caballo','Combate','Maestro',' Extenso','Rueda','Vacante','Erecta','Fundador','Escribir','Angel','Collar','Vapor','Dormir','Capital','Corona','Libertad','Robusto','Guantes','Equivocado','Comer','Soñar','Volar','Bromista','Corral','Amarillo','Barco','Elefante','Oso','Granulado','Postre','Sopa','Caminar','Miercoles','Diciembre','Cantar']
 // let tablero = document.getElementById("2D");
 
 window.onload = function(){
+    console.log('Cargar windows');
     document.onkeyup = leercaracter;
 }
 var palabraSecreta = "";
@@ -96,7 +97,7 @@ function leercaracter(event){
             parteMuneco = parteMuneco + 1;
             pincel.font='50px serif';
             pincel.fillStyle = "#0000FF";
-            pincel.fillText("VUELVE A INTENTARLO!!!",300,200)
+            pincel.fillText("VUELVE A INTENTARLO!!!",200,200)
             finjuego = true;
             return;
         }
@@ -125,6 +126,8 @@ function leercaracter(event){
 
 function escogerPalabraSecreta (){
     let palabra = palabras[Math.floor(Math.random()*palabras.length)];
+    console.log(palabras.length);
+    console.log(Math.floor(Math.random()*palabras.length));
     palabraSecreta = palabra;
 
 }
@@ -149,15 +152,20 @@ function botonGuardar(){
 }
 
 function inciarJuego(){
-    document.getElementById ("inciarJuego").style.display ="none";
-    
-    escogerPalabraSecreta();
+    // document.getElementById ("inciarJuego").style.display ="none";
 
+    //document.onkeyup = leercaracter;
+    
     palabraRecibida = atob(urlParams.get('palabra'))
 
-    if (urlParams.has('palabra')){
-        palabraSecreta = palabraRecibida
+    if (urlParams.has('palabra') & palabraRecibida!=''){
+        //Hay una palabra nueva.
+        //agregar a la lista..
+        palabras[palabras.length] = palabraRecibida;
     }
+
+    escogerPalabraSecreta();
+
     //convertir la palabra a mayuscula
     palabraSecreta = palabraSecreta.toUpperCase();
 
@@ -191,7 +199,7 @@ function inciarJuego(){
 function dibujar1(){
     pincel.beginPath();
     pincel.lineWidth = 3;
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "black";
     pincel.moveTo(353,400);
     pincel.lineTo(647,400);
     pincel.stroke();    

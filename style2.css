@@ -1,13 +1,15 @@
 body{
-    transform: scale(0.75,0.60);
+    transform: scale(0.75,0.50);
+    background: orange;
 }
 
 #caja{
     position: relative;
     width: 1440px;
     height: 1024px;
-    background: #F3F5FC;
-    margin-top: -150px;
+    background: #e1e18b;
+    margin-top: -200px;
+    margin-left: -75px;
     padding: 30px 35px;
 }
 
@@ -59,7 +61,7 @@ body{
     
     /* Dark blue/dark-blue-300 */
     
-    background: #0A3871;
+    background: orange;
     border-radius: 24px;
     
     /* Inside auto layout */
@@ -83,7 +85,7 @@ body{
     
     /* Dark blue/dark-blue-300 */
     
-    background: #0A3871;
+    background: orange;
     border-radius: 24px;
     
     /* Inside auto layout */

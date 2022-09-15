@@ -1,14 +1,15 @@
 body{
-    transform: scale(0.75,0.60);
-    background: yellow;
+    transform: scale(0.75,0.50);
+    background: orange;
 }
 
 #caja{
     position: relative;
     width: 1440px;
     height: 1024px;
-    background: #b7b1b1;
-    margin-top: -150px;
+    background: #e1e18b;
+    margin-top: -200px;
+    margin-left: -75px;
     padding: 30px 35px;
 }
 
@@ -36,10 +37,12 @@ body{
     height: 114px;
     left: 561px;
     top: 402px;
+    font-size: 25px;
+    
 
     /* Dark blue/dark-blue-300 */
     
-    background: #0A3871;
+    background: orange;
     border-radius: 24px;
 }
 
@@ -59,9 +62,18 @@ body{
     height: 67px;
     left: 579px;
     top: 554px;
+    font-size: 20px;
 
     /* Dark blue/dark-blue-300 */
 
-    border: 1px solid #0A3871;
+    /* border: 1px solid #0A3871; */
     border-radius: 24px;
+    background: #e1e18b;
+}
+
+@media screen and (max-width:450px) {
+    body{
+        /* background: green; */
+    }
+    
 }
