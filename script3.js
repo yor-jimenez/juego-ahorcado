@@ -23,6 +23,10 @@ var arreglo = [];
 var poserror = 360;
 var letrasErradas = []
 
+function cancelar(){
+    
+}
+
 function leercaracter(event){
     var caracter = event.key.toUpperCase();
     var posicion;
@@ -155,6 +159,10 @@ function inciarJuego(){
     // document.getElementById ("inciarJuego").style.display ="none";
 
     //document.onkeyup = leercaracter;
+
+    parteMuneco = 1;
+
+    finjuego = false;
     
     palabraRecibida = atob(urlParams.get('palabra'))
 
