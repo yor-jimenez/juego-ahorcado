@@ -72,3 +72,16 @@ body{
     flex-grow: 1; 
     font-size: 25px;    
 }
+
+@media screen and (max-width:480px) {
+    body{
+        /* background: green; */
+    }
+
+    #caja{
+        width: 375px;
+        height: 667px;
+    }
+}
+
+    

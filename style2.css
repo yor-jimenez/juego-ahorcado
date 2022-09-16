@@ -95,4 +95,72 @@ body{
     flex-grow: 1; 
 }
 
-    
+@media screen and (max-width:480px) {
+    body{
+        /* background: green; */
+    }
+
+    #caja{
+        position: relative;
+        width: 375px;
+        height: 667px;
+        background: #e1e18b;
+        margin-top: -100px;
+        margin-left: -33px;
+        padding: 30px 35px;
+    }
+
+
+    #input-text{
+        margin-left: -300px;
+    }
+
+    .guardarEmpezar{
+        /* display: flex; */
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0; 
+        gap: 8px;
+        font-size: 25px;
+        width: 50%;
+        height: 67px;
+        background: #4a00ff;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        margin-left: -532px;
+        margin-top: 50px;
+
+    }
+
+    .cancelar{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0; 
+        gap: 8px;
+        font-size: 25px;
+        width: 50%;
+        height: 67px;
+        background: #4a00ff;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        margin-left: -350px;
+        margin-top: 150px;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 50;
+        height: 67px;
+        margin-left: 200px;
+        left: 376px;
+        top: 701px;
+    }
+}
+
