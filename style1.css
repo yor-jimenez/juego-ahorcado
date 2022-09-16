@@ -78,29 +78,29 @@ body{
 
     #caja{
         position: relative;
-        width: 390px;
-        height: 1000px;
+        width: 375px;
+        height: 667px;
         background: #e1e18b;
-        margin-top: -200px;
-        margin-left: -40px;
+        margin-top: -100px;
+        margin-left: -33px;
         padding: 30px 35px;
 
     }
 
     .botonIniciar{
         display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 8px;
-    position: absolute;
-    width: 317px;
-    height: 114px;
-    left: 80px;
-    top: 402px;
-    font-size: 25px;
-    background: orange;
-    border-radius: 24px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        position: absolute;
+        width: 317px;
+        height: 114px;
+        left: 80px;
+        top: 402px;
+        font-size: 25px;
+        background: orange;
+        border-radius: 24px;
     }
 
     .agregarPalabra{
@@ -119,8 +119,5 @@ body{
         /* border: 1px solid #0A3871; */
         border-radius: 24px;
         background: #e1e18b
-
     }
-   
-    
 }
