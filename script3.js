@@ -1,4 +1,4 @@
-let palabras = ['Estudiar','Espectador','Suave','Culpa','Cena','Caballo','Combate','Maestro',' Extenso','Rueda','Vacante','Erecta','Fundador','Escribir','Angel','Collar','Vapor','Dormir','Capital','Corona','Libertad','Robusto','Guantes','Equivocado','Comer','Soñar','Volar','Bromista','Corral','Amarillo','Barco','Elefante','Oso','Granulado','Postre','Sopa','Caminar','Miercoles','Diciembre','Cantar']
+let palabras = ['Estudiar','Espectador','Suave','Culpa','Cena','Caballo','Combate','Maestro','Extenso','Rueda','Vacante','Erecta','Fundador','Escribir','Angel','Collar','Vapor','Dormir','Capital','Corona','Libertad','Robusto','Guantes','Equivocado','Comer','Soñar','Volar','Bromista','Corral','Amarillo','Barco','Elefante','Oso','Granulado','Postre','Sopa','Caminar','Miercoles','Diciembre','Cantar']
 // let tablero = document.getElementById("2D");
 
 window.onload = function(){
@@ -24,7 +24,7 @@ var poserror = 360;
 var letrasErradas = []
 
 function cancelar(){
-    
+
 }
 
 function leercaracter(event){
@@ -100,7 +100,7 @@ function leercaracter(event){
             dibujar10();
             parteMuneco = parteMuneco + 1;
             pincel.font='50px serif';
-            pincel.fillStyle = "#0000FF";
+            pincel.fillStyle = "##ff0000";
             pincel.fillText("VUELVE A INTENTARLO!!!",200,200)
             finjuego = true;
             return;
@@ -206,7 +206,7 @@ function inciarJuego(){
 
 function dibujar1(){
     pincel.beginPath();
-    pincel.lineWidth = 3;
+    pincel.lineWidth = 8;
     pincel.strokeStyle = "black";
     pincel.moveTo(353,400);
     pincel.lineTo(647,400);
@@ -216,7 +216,7 @@ function dibujar1(){
 
 function dibujar2 (){
     pincel.beginPath();
-    pincel.lineWidth = 3;
+    pincel.lineWidth = 8;
     pincel.strokeStyle = "blue";
     pincel.moveTo(400,400);
     pincel.lineTo(400,40);
@@ -226,7 +226,7 @@ function dibujar2 (){
 
 function dibujar3 (){
     pincel.beginPath();
-    pincel.lineWidth = 3;
+    pincel.lineWidth = 8;
     pincel.strokeStyle = "blue";
     pincel.moveTo(400,40);
     pincel.lineTo(577,40);
@@ -237,7 +237,7 @@ function dibujar3 (){
 
 function dibujar4 (){
     pincel.beginPath();
-    pincel.lineWidth = 3;
+    pincel.lineWidth = 8;
     pincel.strokeStyle = "blue";
     pincel.moveTo(577,40);
     pincel.lineTo(577,90);
@@ -256,7 +256,7 @@ function dibujar5 (){
 
 function dibujar6 (){
     pincel.beginPath();
-    pincel.lineWidth = 3;
+    pincel.lineWidth = 8;
     pincel.strokeStyle = "blue";
     pincel.moveTo(577,152);
     pincel.lineTo(577,300);
@@ -267,7 +267,7 @@ function dibujar6 (){
 
 function dibujar7 (){
     pincel.beginPath();
-    pincel.lineWidth = 3;
+    pincel.lineWidth = 8;
     pincel.strokeStyle = "blue";
     pincel.moveTo(577,300);
     pincel.lineTo(550,350);
@@ -277,7 +277,7 @@ function dibujar7 (){
 
 function dibujar8 (){
     pincel.beginPath();
-    pincel.lineWidth = 3;
+    pincel.lineWidth = 8;
     pincel.strokeStyle = "blue";
     pincel.moveTo(577,300);
     pincel.lineTo(604,350);
@@ -287,7 +287,7 @@ function dibujar8 (){
 
 function dibujar9 (){
     pincel.beginPath();
-    pincel.lineWidth = 3;
+    pincel.lineWidth = 8;
     pincel.strokeStyle = "blue";
     pincel.moveTo(577,200);
     pincel.lineTo(530,300);
@@ -297,7 +297,7 @@ function dibujar9 (){
 
 function dibujar10 (){
     pincel.beginPath();
-    pincel.lineWidth = 3;
+    pincel.lineWidth = 8;
     pincel.strokeStyle = "blue";
     pincel.moveTo(577,200);
     pincel.lineTo(624,300);

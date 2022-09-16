@@ -13,6 +13,16 @@ body{
     padding: 30px 35px;
 }
 
+/* #2D{
+    background-color:rgb(210, 179, 160);
+    margin-left: 250px;
+} */
+
+/* .guiones{
+    background: greenyellow;
+    margin-left: 15px;
+} */
+
 .boton3{
     display: flex;
     flex-direction: row;
@@ -81,7 +91,78 @@ body{
     #caja{
         width: 375px;
         height: 667px;
+        margin-top: 0px;
+        margin-left: -30px;
     }
+
+    canvas{
+        width: 300px;
+        height: 600px;
+    }
+
+    .boton3{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 0px;
+        height: 67px;
+        left: 50px;
+        top: 780px;
+    }
+ 
+
+    #iniciarJuego{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 24px;
+        gap: 8px;
+        width: 332px;
+        height: 67px;
+        background: orange;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        font-size: 25px;
+        margin-top: 100px;
+        margin-left: -350px;
+
+    }
+
+    #cancelar{
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0;
+        gap: 8px;
+        font-size: 25px;
+        width: 300px;
+        height: 67px;
+        background: #e1e18b;
+        border-radius: 24px;
+        flex: none;
+        order: 0;
+        margin-left: -325px;
+        margin-top: 150px;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+        align-items: normal;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 100px;
+        height: 67px;
+        margin-left: 0;
+        left: 25px;
+        top: 900px;
+    }
+
 }
 
     

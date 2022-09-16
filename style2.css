@@ -116,49 +116,48 @@ body{
     }
 
     .guardarEmpezar{
-        /* display: flex; */
         flex-direction: row;
         align-items: flex-start;
-        padding: 0; 
+        padding: 0;
         gap: 8px;
         font-size: 25px;
-        width: 50%;
+        width: 300px;
         height: 67px;
-        background: #4a00ff;
+        background: #e1e18b;
         border-radius: 24px;
         flex: none;
         order: 0;
-        margin-left: -532px;
-        margin-top: 50px;
+        margin-left: -290px;
+        margin-top: 60px;
 
     }
 
     .cancelar{
         flex-direction: row;
         align-items: flex-start;
-        padding: 0; 
+        padding: 0;
         gap: 8px;
         font-size: 25px;
-        width: 50%;
+        width: 300px;
         height: 67px;
-        background: #4a00ff;
+        background: #e1e18b;
         border-radius: 24px;
         flex: none;
         order: 0;
-        margin-left: -350px;
+        margin-left: -325px;
         margin-top: 150px;
     }
 
     .botones{
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: normal;
         padding: 0px;
         gap: 24px;
         position: absolute;
-        width: 50;
+        width: 100px;
         height: 67px;
-        margin-left: 200px;
+        margin-left: 0;
         left: 376px;
         top: 701px;
     }
