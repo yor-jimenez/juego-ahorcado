@@ -1,16 +1,20 @@
 body{
     transform: scale(0.75,0.50);
-    background: orange;
+    background: #66d747;
 }
 
 #caja{
     position: relative;
     width: 1440px;
     height: 1024px;
-    background: #e1e18b;
+    background: #e7e7c0;
     margin-top: -200px;
     margin-left: -75px;
     padding: 30px 35px;
+    box-shadow: 10px 10px 10px 25px #1c5d0a;
+    background-image: url(imagenes/ImagenFondoCaja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* .botones{
@@ -42,7 +46,7 @@ body{
 
     /* Dark blue/dark-blue-300 */
     
-    background: orange;
+    background: #66d747;
     border-radius: 24px;
 }
 
@@ -68,7 +72,7 @@ body{
 
     /* border: 1px solid #0A3871; */
     border-radius: 24px;
-    background: #e1e18b;
+    background: #e7e7c0;
 }
 
 @media screen and (max-width:480px) {

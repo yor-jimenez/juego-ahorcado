@@ -100,7 +100,7 @@ function leercaracter(event){
             dibujar10();
             parteMuneco = parteMuneco + 1;
             pincel.font='50px serif';
-            pincel.fillStyle = "##ff0000";
+            pincel.fillStyle = "#ff0000";
             pincel.fillText("VUELVE A INTENTARLO!!!",200,200)
             finjuego = true;
             return;
@@ -119,7 +119,7 @@ function leercaracter(event){
           if(arreglo.toString().replaceAll(',','').length==0){
             //lo logrates..
             pincel.font='50px serif';
-            pincel.fillStyle = "#0000FF";
+            pincel.fillStyle = "#ffff00";
             pincel.fillText("LO LOGRASTES!!!",300,200)
             finjuego = true;
             return;
@@ -217,7 +217,7 @@ function dibujar1(){
 function dibujar2 (){
     pincel.beginPath();
     pincel.lineWidth = 8;
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "black";
     pincel.moveTo(400,400);
     pincel.lineTo(400,40);
     pincel.stroke();    
@@ -227,7 +227,7 @@ function dibujar2 (){
 function dibujar3 (){
     pincel.beginPath();
     pincel.lineWidth = 8;
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "black";
     pincel.moveTo(400,40);
     pincel.lineTo(577,40);
     pincel.stroke();    
@@ -238,7 +238,7 @@ function dibujar3 (){
 function dibujar4 (){
     pincel.beginPath();
     pincel.lineWidth = 8;
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "black";
     pincel.moveTo(577,40);
     pincel.lineTo(577,90);
     pincel.stroke();    
@@ -257,7 +257,7 @@ function dibujar5 (){
 function dibujar6 (){
     pincel.beginPath();
     pincel.lineWidth = 8;
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "black";
     pincel.moveTo(577,152);
     pincel.lineTo(577,300);
     pincel.stroke();    
@@ -268,7 +268,7 @@ function dibujar6 (){
 function dibujar7 (){
     pincel.beginPath();
     pincel.lineWidth = 8;
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "black";
     pincel.moveTo(577,300);
     pincel.lineTo(550,350);
     pincel.stroke();    
@@ -278,7 +278,7 @@ function dibujar7 (){
 function dibujar8 (){
     pincel.beginPath();
     pincel.lineWidth = 8;
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "black";
     pincel.moveTo(577,300);
     pincel.lineTo(604,350);
     pincel.stroke();    
@@ -288,7 +288,7 @@ function dibujar8 (){
 function dibujar9 (){
     pincel.beginPath();
     pincel.lineWidth = 8;
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "black";
     pincel.moveTo(577,200);
     pincel.lineTo(530,300);
     pincel.stroke();    
@@ -298,7 +298,7 @@ function dibujar9 (){
 function dibujar10 (){
     pincel.beginPath();
     pincel.lineWidth = 8;
-    pincel.strokeStyle = "blue";
+    pincel.strokeStyle = "black";
     pincel.moveTo(577,200);
     pincel.lineTo(624,300);
     pincel.stroke();    
@@ -324,7 +324,6 @@ function dibujahasta(n){
     if(n>=6){
         dibujar6()
     }
-    
     if(n>=7){
         dibujar7()
     }

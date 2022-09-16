@@ -1,6 +1,6 @@
 body{
     transform: scale(0.75,0.50);
-    background: orange;
+    background:  #66d747;
 }
 
 #caja{
@@ -11,6 +11,10 @@ body{
     margin-top: -200px;
     margin-left: -75px;
     padding: 30px 35px;
+    box-shadow: 10px 10px 10px 25px #1c5d0a;
+    background-image: url(imagenes/ImagenFondoCaja.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #input-text{
@@ -61,7 +65,7 @@ body{
     
     /* Dark blue/dark-blue-300 */
     
-    background: orange;
+    background: #66d747;
     border-radius: 24px;
     
     /* Inside auto layout */
@@ -85,7 +89,7 @@ body{
     
     /* Dark blue/dark-blue-300 */
     
-    background: orange;
+    background: #66d747 ;
     border-radius: 24px;
     
     /* Inside auto layout */
