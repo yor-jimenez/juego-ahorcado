@@ -119,7 +119,7 @@ function leercaracter(event){
           if(arreglo.toString().replaceAll(',','').length==0){
             //lo logrates..
             pincel.font='50px serif';
-            pincel.fillStyle = "#ffff00";
+            pincel.fillStyle = "#172DE2";
             pincel.fillText("LO LOGRASTES!!!",300,200)
             finjuego = true;
             return;
