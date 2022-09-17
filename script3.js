@@ -45,7 +45,7 @@ function leercaracter(event){
         
         if(!letrasErradas.includes(caracter)){
             letrasErradas[letrasErradas.length]=caracter;
-            pincel.font='20px normal'
+            pincel.font='25px normal'
             pincel.fillStyle = "#EE4B2B";
             pincel.fillText(caracter,poserror,530);
             poserror = poserror + 15;
@@ -111,8 +111,8 @@ function leercaracter(event){
         do {
             posicion = arreglo.indexOf(caracter);
             arreglo[posicion] =  null;
-            pincel.font='30px serif';
-            pincel.fillStyle = "#0000FF";
+            pincel.font='35px serif';
+            pincel.fillStyle = "#000000";
             pincel.fillText(caracter,posicionLetras[posicion],480);
           } while (posicion > -1);
 
@@ -124,7 +124,6 @@ function leercaracter(event){
             finjuego = true;
             return;
         }
-
     }
 }
 
@@ -138,8 +137,8 @@ function escogerPalabraSecreta (){
 
 function guion (inicio,fin){
     pincel.beginPath();
-    pincel.lineWidth = 3;
-    pincel.strokeStyle = "blue";
+    pincel.lineWidth = 6;
+    pincel.strokeStyle = "black";
     pincel.moveTo(inicio,500);
     pincel.lineTo(fin,500);
     pincel.stroke();
