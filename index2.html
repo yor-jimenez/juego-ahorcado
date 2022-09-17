@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
     <link rel="stylesheet" href="reset.css">
     <title>juego_ahorcado</title>
 </head>
@@ -12,27 +12,26 @@
     <div id="caja">
         <div class="imagen">
             <img class="logoAlura" src="imagenes/LogoAlura.png" alt="Logo Alura iniciando con la letra A">
-        </div>
-            <input id="input-text" placeholder="Ingrese una palabra">
-
-            <!-- <form action="http://foo.com" method="post">
-                <div>
-                  <label for="dice"> Ingrese una palabra </label>
-                  <input name="decir" id="input-text" value="Hola">
-                </div>
-            </form> -->
-
-        <div class="botones">
-            <!-- <p class="sugerencia">Max 8 letras</p>  -->
-            <button class="guardarEmpezar" onclick="botonGuardar()"> Guardar y empezar
-            </button>
-            <button class="cancelar" onclick="botonCancelar()"> Cancelar
-            </button>
-            <!-- <button class="botonIniciar" onclick="window.location.href='index3.html'">Iniciar juego</button> -->
-        </div>
-
     </div>
+
+    <div>
+        <canvas id="2D" width="900" height="600" ></canvas>
         
+        <!-- style="background-color:rgb(210, 179, 160); margin-left: 250px;">
+
+        </canvas> -->
+    </div>
+
+    <div class="guiones"></div>
+
+    <div class="boton3">
+        <button id="inciarJuego" onclick="inciarJuego()"> Nuevo juego
+        </button>
+        <button id="cancelar" onclick="window.location.href='index.html'"> Desistir
+        </button>
+    </div>
+
+
     <script src="script3.js"></script>
     
 </body>

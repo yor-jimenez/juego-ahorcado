@@ -151,7 +151,7 @@ function borrarCanvas(){
 function botonGuardar(){
     let palabra = document.getElementById("input-text").value;
     var encrypted = btoa(palabra);
-    window.location.href="index3.html?palabra="+encrypted;
+    window.location.href="index2.html?palabra="+encrypted;
 }
 
 function inciarJuego(){
