@@ -75,6 +75,18 @@ body{
     background: #e7e7c0;
 }
 
+footer{
+    top: -50px;
+    position: absolute;
+    left: -60px; 
+}
+
+.copyright{
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+}
+
 @media screen and (max-width:480px) {
     body{
         /* background: green; */
